@@ -71,6 +71,7 @@ function meta_boxes_accordions_input( $post ) {
 	$accordions_active_bg_color = get_post_meta( $post->ID, 'accordions_active_bg_color', true );
 	
 	$accordions_items_title_color = get_post_meta( $post->ID, 'accordions_items_title_color', true );	
+  $accordions_active_title_color = get_post_meta( $post->ID, 'accordions_active_title_color', true );
 	$accordions_items_title_font_size = get_post_meta( $post->ID, 'accordions_items_title_font_size', true );
 	
 	$accordions_items_content_color = get_post_meta( $post->ID, 'accordions_items_content_color', true );	
@@ -291,7 +292,11 @@ function meta_boxes_accordions_input( $post ) {
                     <p class="option-info"></p>
                     <input type="text" name="accordions_items_title_color" id="accordions_items_title_color" value="<?php if(!empty($accordions_items_title_color)) echo $accordions_items_title_color; else echo "#28c8a8"; ?>" />                </div>
 
-
+        <div class="option-box">
+                    <p class="option-title">Accordions Active Header Font Color</p>
+                    <p class="option-info"></p>
+                    <input type="text" name="accordions_active_title_color" id="accordions_active_title_color" value="<?php if(!empty($accordions_active_title_color)) echo $accordions_active_title_color; else echo "#28c8a8"; ?>" />                </div>
+                    
 				<div class="option-box">
                     <p class="option-title">Accordions Header Font Size</p>
                     <p class="option-info"></p>
@@ -428,7 +433,8 @@ function meta_boxes_accordions_save( $post_id ) {
 
 
 	$accordions_items_title_color = sanitize_text_field( $_POST['accordions_items_title_color'] );	
-	$accordions_items_title_font_size = sanitize_text_field( $_POST['accordions_items_title_font_size'] );	
+  $accordions_active_title_color = sanitize_text_field( $_POST['accordions_active_title_color'] );	
+  $accordions_items_title_font_size = sanitize_text_field( $_POST['accordions_items_title_font_size'] );	
 
 	$accordions_items_content_color = sanitize_text_field( $_POST['accordions_items_content_color'] );	
 	$accordions_items_content_font_size = sanitize_text_field( $_POST['accordions_items_content_font_size'] );	
@@ -451,7 +457,8 @@ function meta_boxes_accordions_save( $post_id ) {
 
 
 	update_post_meta( $post_id, 'accordions_items_title_color', $accordions_items_title_color );
-	update_post_meta( $post_id, 'accordions_items_title_font_size', $accordions_items_title_font_size );
+  update_post_meta( $post_id, 'accordions_active_title_color', $accordions_active_title_color );
+  update_post_meta( $post_id, 'accordions_items_title_font_size', $accordions_items_title_font_size );
 
 	update_post_meta( $post_id, 'accordions_items_content_color', $accordions_items_content_color );
 	update_post_meta( $post_id, 'accordions_items_content_font_size', $accordions_items_content_font_size );

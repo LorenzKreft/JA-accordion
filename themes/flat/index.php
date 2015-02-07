@@ -14,6 +14,7 @@ function accordions_themes_flat($post_id)
 		$accordions_active_bg_color = get_post_meta( $post_id, 'accordions_active_bg_color', true );
 		
 		$accordions_items_title_color = get_post_meta( $post_id, 'accordions_items_title_color', true );			
+		$accordions_active_title_color = get_post_meta( $post_id, 'accordions_active_title_color', true );			
 		$accordions_items_title_font_size = get_post_meta( $post_id, 'accordions_items_title_font_size', true );		
 
 		$accordions_items_content_color = get_post_meta( $post_id, 'accordions_items_content_color', true );
@@ -70,6 +71,7 @@ function accordions_themes_flat($post_id)
 		
 		#accordions-'.$post_id.' .responsive-accordion-head.active{
 			background: '.$accordions_active_bg_color.';
+			color: '.$accordions_active_title_color.';
 
 			}
 		
