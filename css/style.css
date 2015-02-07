@@ -60,7 +60,7 @@
 .accordions-container {
   margin: 50px 0;
   overflow: hidden;
-  padding: 30px;
+  /*padding: 30px;*/
   position: relative;
   text-align: center;
 }
@@ -107,6 +107,3 @@ background: url("icons/arrow-round-inside-2.png") no-repeat scroll 0 -16px rgba(
 .responsive-accordion-minus.arrow-thin{
 background: url("icons/arrow-thin.png") no-repeat scroll 0 -16px rgba(0, 0, 0, 0);
 }
-
-
-
