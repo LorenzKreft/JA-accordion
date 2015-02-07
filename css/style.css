@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Admin CSS*/
+
+#accordions_metabox ul.accordions_bg_img_list{}
+
+#accordions_metabox ul.accordions_bg_img_list li {
+  display: inline-block;
+  margin: 5px;
+}
+#accordions_metabox ul.accordions_bg_img_list li.bg-selected {}
+
+#accordions_metabox ul.accordions_bg_img_list li img{border: 2px solid #ffffff;}
+
+#accordions_metabox ul.accordions_bg_img_list li.bg-selected img{
+  border: 2px solid #ff5a11;
+}
+
+
+
+#accordions_metabox .accordions-content tr{
+
+}
+
+#accordions_metabox .accordions-content td {
+  background: none repeat scroll 0 0 rgb(245, 245, 245);
+  border-left: 3px solid rgb(255, 255, 255);
+  padding-bottom: 15px;
+}
+
+#accordions_metabox .accordions-content input, #accordions_metabox .accordions-content textarea {
+  margin-left: 10px;
+  width: 95%;
+}
+
+
+#accordions_metabox .accordions-content .removeaccordions {
+  background: none repeat scroll 0 0 rgb(221, 221, 221);
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 3px;
+  padding: 1px 5px;
+  position: absolute;
+}
+
+#accordions_metabox .accordions-content .removeaccordions:hover {
+  background: none repeat scroll 0 0 rgb(255, 134, 87);
+}
+
+#accordions_metabox .accordions-content .tab-new {
+  background: none repeat scroll 0 0 #a3dbff;
+}
+
+
+
+/*CSS front page*/
+
+.accordions-container {
+  margin: 50px 0;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+
+.responsive-accordion-icons {
+  height: 16px;
+  width: 16px;
+}
+
+.responsive-accordion-plus.arrow-double {
+  background: url("icons/arrow-double.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.responsive-accordion-minus.arrow-double{
+background: url("icons/arrow-double.png") no-repeat scroll 0 -16px rgba(0, 0, 0, 0);
+}
+
+
+
+.responsive-accordion-plus.arrow-dark {
+  background: url("icons/arrow-dark.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.responsive-accordion-minus.arrow-dark{
+background: url("icons/arrow-dark.png") no-repeat scroll 0 -16px rgba(0, 0, 0, 0);
+}
+
+.responsive-accordion-plus.arrow-naked {
+  background: url("icons/arrow-naked.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.responsive-accordion-minus.arrow-naked{
+background: url("icons/arrow-naked.png") no-repeat scroll 0 -16px rgba(0, 0, 0, 0);
+}
+
+.responsive-accordion-plus.arrow-round-inside-2 {
+  background: url("icons/arrow-round-inside-2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.responsive-accordion-minus.arrow-round-inside-2{
+background: url("icons/arrow-round-inside-2.png") no-repeat scroll 0 -16px rgba(0, 0, 0, 0);
+}
+
+.responsive-accordion-plus.arrow-thin {
+  background: url("icons/arrow-thin.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.responsive-accordion-minus.arrow-thin{
+background: url("icons/arrow-thin.png") no-repeat scroll 0 -16px rgba(0, 0, 0, 0);
+}
+
+
+
